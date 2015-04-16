@@ -15,20 +15,10 @@ Parameters
 ``Additional layer (intersection layer)`` [vector: any]
   <put parameter description here>
 
-``Include input features that touch the selection features`` [boolean]
+``Geometric predicate`` [geometrypredicate]
   <put parameter description here>
 
-  Default: *False*
-
-``Include input features that overlap/cross the selection features`` [boolean]
-  <put parameter description here>
-
-  Default: *False*
-
-``Include input features completely within the selection features`` [boolean]
-  <put parameter description here>
-
-  Default: *False*
+  Default: *[]*
 
 Outputs
 -------
@@ -41,7 +31,7 @@ Console usage
 
 ::
 
-  processing.runalg('qgis:extractbylocation', input, intersect, touches, overlaps, within, output)
+  processing.runalg('qgis:extractbylocation', input, intersect, predicate, output)
 
 See also
 --------

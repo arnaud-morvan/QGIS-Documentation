@@ -1,5 +1,5 @@
 Join attributes by location
-==========================
+===========================
 
 Description
 -----------
@@ -15,6 +15,11 @@ Parameters
 ``Join vector layer`` [vector: any]
   <put parameter description here>
 
+``Geometric predicate`` [geometrypredicate]
+  <put parameter description here>
+
+  Default: *[]*
+
 ``Attribute summary`` [selection]
   <put parameter description here>
 
@@ -26,6 +31,8 @@ Parameters
   Default: *0*
 
 ``Statistics for summary (comma separated)`` [string]
+  Optional.
+
   <put parameter description here>
 
   Default: *sum,mean,min,max,median*
@@ -51,7 +58,7 @@ Console usage
 
 ::
 
-  processing.runalg('qgis:joinatributesbylocation', target, join, summary, stats, keep, output)
+  processing.runalg('qgis:joinattributesbylocation', target, join, predicate, summary, stats, keep, output)
 
 See also
 --------
